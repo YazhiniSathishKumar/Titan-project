@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Webpage</title>
+  <style>
+    /* Basic Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 10px;
+    }
+    
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .container {
+      display: grid;
+      gap: 20px;
+    }
+    
+    header,
+    .content,
+    footer {
+      padding: 20px;
+      border: 1px solid #ddd;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      background-color: #f4f4f4;
+    }
+    
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+    }
+    
+    nav ul li {
+      margin: 0 15px;
+    }
+    
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    
+    .content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    
+    .box {
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+    }
+
+    /* Media Queries */
+    @media (max-width: 1200px) {
+      .content {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .content {
+        grid-template-columns: 1fr;
+      }
+      
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      nav ul li {
+        margin-bottom: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 5px;
+      }
+
+      header,
+      .content,
+      footer {
+        padding: 15px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Responsive Webpage</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <div class="content">
+      <div class="box">
+        <h2>About Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fermentum, nulla a vulputate auctor, augue libero gravida erat, vel bibendum turpis mi nec mi.</p>
+      </div>
+      
+      <div class="box">
+        <h2>Our Services</h2>
+        <p>Curabitur in ante ac turpis malesuada viverra. Donec quis ex in arcu viverra laoreet ac sed nulla. Integer bibendum nisl sit amet lacus cursus, at eleifend lectus sodales.</p>
+      </div>
+      
+      <div class="box">
+        <h2>Contact Us</h2>
+        <p>Aliquam lobortis augue id urna condimentum ultricies. Sed auctor lorem metus, in pulvinar justo gravida ac. Nullam auctor quam vel libero efficitur pretium.</p>
+      </div>
+    </div>
+    
+    <footer>
+      <p>&copy; 2024 Responsive Webpage. All rights reserved.</p>
+    </footer>
+  </div>
+
+</body>
+</html>
+
