@@ -1,0 +1,158 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    padding: 1rem;
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#navbar__logo {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.navbar__menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar__item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* User Profile */
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#user-name {
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+#logout-btn {
+    background-color: #ff9c00;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#logout-btn:hover {
+    background-color: #fff;
+    color: #ff9c00;
+}
+
+/* Main Section */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.main__container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.main__content {
+    max-width: 600px;
+}
+
+.main__content h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.main__content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.main__btn {
+    background-color: #ff9c00;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.main__btn a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.main__btn:hover {
+    background-color: #ff7800;
+}
+
+.main__img--container img {
+    width: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .main__container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main__img--container img {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .navbar__menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
